@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:layout_marginStart="10dp"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/almond">
+
+        <ImageView
+            android:id="@+id/passengerPic"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="8dp"
+            android:padding="4dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/passengerPic"
+            android:layout_toRightOf="@+id/passengerPic">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/passengerName"
+                android:layout_margin="2dp"
+                android:padding="2dp"
+                android:text="Passenger Name"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/passengerEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="2dp"
+                android:text="Email"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/passengerRating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="2dp"
+                android:text="Rating"
+                android:textColor="@color/black" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratePassenger"
+                android:text="Rate passenger"
+                android:layout_gravity="left"
+                android:layout_margin="5dp"/>
+
+
+
+        </LinearLayout>
+        <!--        <androidx.recyclerview.widget.RecyclerView-->
+        <!--            android:id="@+id/passengers_list"-->
+        <!--            android:scrollbars="vertical"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="0dp"-->
+        <!--            android:layout_marginTop="50dp"-->
+        <!--            />-->
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

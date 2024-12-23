@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/khaki"
+    tools:context=".ChoosenRideActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Information for your choosen driver:"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="90dp"
+            android:layout_marginBottom="20dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext"
+            app:cardCornerRadius="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/almond"
+                android:padding="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Driver Name:"
+                    android:id="@+id/driverName"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Driver Email:"
+                    android:id="@+id/driverEmail1"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rating:"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:id="@+id/driverRating"
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Car type:"
+                    android:id="@+id/driverCar"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Car registration:"
+                    android:id="@+id/driverRegistration"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_margin="5dp"/>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Choose driver"
+            android:textSize="16dp"
+            android:id="@+id/chooseDriver"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/almond"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Rate driver"
+            android:textSize="16dp"
+            android:id="@+id/rateDriver"
+            android:layout_gravity="center"
+            android:textColor="@color/almond"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

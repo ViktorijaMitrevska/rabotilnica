@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/khaki"
+tools:context=".RegisterActivity">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MyFragment">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Register"
+                android:text="Welcome!"
+                android:textSize="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/welcome1"
+                android:text="Please register by filling your information."
+                android:textSize="16dp"
+                android:layout_marginBottom="30dp"
+                android:textColor="@color/black"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_edittext"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:background="@color/almond">
+
+                    <EditText
+                        android:id="@+id/RegisterName"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Name"
+                        android:background="@drawable/custom_edittext"
+                        android:gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:inputType="text"/>
+
+                    <EditText
+                        android:id="@+id/RegisterEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Email"
+                        android:background="@drawable/custom_edittext"
+                        android:gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:inputType="textEmailAddress"/>
+
+                    <EditText
+                        android:id="@+id/RegisterPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Password"
+                        android:background="@drawable/custom_edittext"
+                        android:gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:inputType="textPassword"/>
+
+                    <EditText
+                        android:id="@+id/RegisterConfirmPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Confirm Password"
+                        android:background="@drawable/custom_edittext"
+                        android:gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:inputType="textPassword"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="What type of user are you?"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <RadioGroup
+                        android:id="@+id/rgroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/driver"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Driver" />
+
+                        <RadioButton
+                            android:id="@+id/passinger"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Passenger"/>
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:id="@+id/driverDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:layout_marginTop="16dp">
+
+                        <EditText
+                            android:id="@+id/CarType"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:background="@drawable/custom_edittext"
+                            android:gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:hint="Car Type" />
+
+                        <EditText
+                            android:id="@+id/CarRegistration"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:hint="Car Registration"
+                            android:background="@drawable/custom_edittext"
+                            android:gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="8dp" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Register"
+                        android:id="@+id/RegisterButton"
+                        android:textSize="18sp"
+                        android:layout_marginTop="10dp"
+                        app:cornerRadius="300dp"/>
+
+                </LinearLayout>
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/LoginRedirect"
+                android:text="Already have an account? Log in!"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:textSize="18sp"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

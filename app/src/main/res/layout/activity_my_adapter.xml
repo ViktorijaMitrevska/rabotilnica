@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:layout_marginStart="10dp"
+
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/almond">
+
+        <ImageView
+            android:id="@+id/driverPic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            android:padding="4dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/driverPic"
+            android:layout_toRightOf="@+id/driverPic">
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/driverName"-->
+<!--                android:layout_margin="2dp"-->
+<!--                android:padding="2dp"-->
+<!--                android:text="Driver Name"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/driverCar"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="2dp"-->
+<!--                android:padding="2dp"-->
+<!--                android:text="Car Type"-->
+<!--                android:textColor="@color/black" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/driverRegistration"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="2dp"-->
+<!--                android:padding="2dp"-->
+<!--                android:text="Registration"-->
+<!--                android:textColor="@color/black" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/driverRating"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="2dp"-->
+<!--                android:padding="2dp"-->
+<!--                android:text="Rating"-->
+<!--                android:textColor="@color/black" />-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Driver Email"
+                android:id="@+id/driverEmail"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_margin="4dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Driver Location"
+                android:id="@+id/driverLocation"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_margin="4dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Driver Destination"
+                android:id="@+id/driverDestination"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_margin="4dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:id="@+id/ridePrice"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_margin="4dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:id="@+id/rideTime"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_margin="4dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:id="@+id/rideDate"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_margin="4dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="left">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choose ride"
+                    android:id="@+id/chooseRide"
+                    android:layout_margin="5dp"
+                   />
+
+<!--                <Button-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Rate driver"-->
+<!--                    android:id="@+id/rateDriver"-->
+<!--                    android:layout_margin="5dp"/>-->
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/passengers_list"-->
+<!--            android:scrollbars="vertical"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_marginTop="50dp"-->
+<!--            />-->
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
